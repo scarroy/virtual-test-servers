@@ -12,6 +12,6 @@
 
   tasks:
     - name: upgrade all Ubuntu packages
-       apt:
+      apt:
         name: '*'
         state: latest

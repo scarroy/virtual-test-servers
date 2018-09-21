@@ -12,6 +12,6 @@
 
   tasks:
     - name: upgrade all RHEL packages
-       yum:
+      yum:
         name: '*'
         state: latest
