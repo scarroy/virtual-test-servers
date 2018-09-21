@@ -1,0 +1,15 @@
+---
+
+- hosts: webserver
+  vars:
+    http_proxy: ""
+    https_proxy: ""
+  gather_facts: True
+  remote_user: scarroy
+  become: no
+  become_user: root
+  become_method: sudo
+
+  tasks:
+    - name: ping the server
+      ping:

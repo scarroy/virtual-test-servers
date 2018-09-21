@@ -1,0 +1,11 @@
+[webserver]
+scarroy-virt3.sandia.gov
+scarroy-virt2.sandia.gov
+scarroy-virt4.sandia.gov
+
+[ubuntu]
+scarroy-virt3.sandia.gov
+scarroy-virt4.sandia.gov
+
+[rhel]
+scarroy-virt2.sandia.gov

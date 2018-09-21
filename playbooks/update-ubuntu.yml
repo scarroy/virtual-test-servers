@@ -1,0 +1,17 @@
+---
+
+- hosts: ubuntu
+  vars:
+    http_proxy: ""
+    https_proxy: ""
+  gather_facts: True
+  remote_user: scarroy
+  become: yes
+  become_user: root
+  become_method: sudo
+
+  tasks:
+    - name: upgrade all Ubuntu packages
+       apt:
+        name: '*'
+        state: latest
